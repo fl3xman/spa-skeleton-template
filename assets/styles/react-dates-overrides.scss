@@ -1,0 +1,55 @@
+@import "variables";
+@import "extensions";
+
+.CalendarDay {
+
+    &__selected_span {
+        background: $green;
+        color: $white;
+        border: 1px solid darken($green, 5%);
+    }
+
+    &__selected {
+        background: lighten($green, 10%);
+        color: $white;
+
+        &:hover {
+            background: darken($green, 10%);
+            color: $white;
+        }
+    }
+
+    &__hovered_span,
+    &__hovered_span:hover {
+        background: $grey;
+    }
+}
+
+.SingleDatePicker {
+    margin: 4px 8px;
+}
+
+.SingleDatePickerInput {
+    width: 100%;
+    border: none;
+}
+
+.DateInput {
+    width: 100%;
+}
+
+.DateInput_input {
+    @extend %base-input;
+    font-weight: inherit;
+    padding: 8px 10px;
+    color: $black;
+    font-size: 11px;
+}
+
+.SingleDatePicker_picker {
+
+    &__fullScreenPortal {
+        background-color: rgba(0, 0, 0, .7);
+    }
+}
+

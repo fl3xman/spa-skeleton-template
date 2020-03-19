@@ -1,0 +1,38 @@
+@import "../../../../../assets/styles/extensions";
+@import "../../../../../assets/styles/margins";
+
+.event-detail {
+
+    &__header {
+        @extend .mt-16, .mb-16;
+    }
+
+    &__wrapper {
+        @extend %content;
+
+        &__content {
+
+            &__description {
+                @extend .mr-16;
+                flex-basis: 60%;
+                text-align: justify;
+            }
+
+            @media only screen and (max-width: $mobile) {
+                flex-wrap: wrap;
+
+                &__description {
+                    flex-basis: 100%;
+                    margin-right: 0;
+                }
+            }
+
+        }
+
+        &__title {
+            @extend .mb-24;
+        }
+
+
+    }
+}

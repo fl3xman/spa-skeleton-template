@@ -1,0 +1,11 @@
+{
+    "extends": [
+        "stylelint-config-recommended",
+        "stylelint-config-recommended-scss"
+    ],
+    "rules": {
+        "rule-empty-line-before": ["always-multi-line", { "ignore": ["after-comment"] }],
+        "no-missing-end-of-source-newline": true,
+        "color-hex-case": "lower"
+    }
+}

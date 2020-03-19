@@ -1,0 +1,67 @@
+@import "variables";
+
+body {
+    font-family: $system-font;
+    font-weight: normal;
+    @media only screen and (max-width: $mobile) {
+        font-size: 12px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.h1 {
+    font-size: 38px;
+    font-weight: bold;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 32px;
+    }
+}
+
+.h2 {
+    font-size: 24px;
+    font-weight: 600;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 20px;
+    }
+}
+
+.h3 {
+    font-size: 18px;
+    font-weight: normal;
+
+    &--bold {
+        @extend .h3;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 14px;
+    }
+}
+
+.label {
+    font-size: 12px;
+    color: $grey;
+}
+
+.input-error {
+    font-size: 12px;
+    color: $red;
+}
+
+.body {
+    font-size: 14px;
+
+    &--bold {
+        font-weight: bold;
+    }
+
+    &--white {
+        color: $white;
+    }
+}

@@ -1,0 +1,14 @@
+@import "variables";
+
+@mixin buttonType($map) {
+    @each $type, $color in $map {
+
+        &--#{$type} {
+            background-color: $color;
+
+            &:hover {
+                background-color: darken($color, 5%);
+            }
+        }
+    }
+}

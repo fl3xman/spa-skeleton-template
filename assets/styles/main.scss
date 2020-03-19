@@ -1,0 +1,10 @@
+@import "variables";
+@import "margins";
+@import "paddings";
+@import "typography";
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    background: $main-bg;
+}

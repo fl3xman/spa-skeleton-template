@@ -1,0 +1,5 @@
+@import "../../../../../assets/styles/extensions";
+
+.create-event-form {
+    @extend %content;
+}

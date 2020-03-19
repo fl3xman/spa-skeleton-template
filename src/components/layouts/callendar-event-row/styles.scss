@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/margins";
+
+.event-row {
+
+    &--expired {
+        opacity: .3;
+    }
+
+    &__date {
+        @extend .mr-24;
+    }
+
+    &__location {
+        @extend .mt-4;
+
+        &__icon {
+            @extend .mr-4;
+            width: 8px;
+        }
+    }
+
+    @media only screen and (max-width: $mobile) {
+
+        &__cta {
+            margin-top: 24px;
+            margin-left: auto;
+            display: none;
+        }
+
+        &__content {
+            flex-wrap: wrap;
+        }
+    }
+}

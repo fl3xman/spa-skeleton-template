@@ -1,0 +1,31 @@
+@import "variables";
+
+$padding-step: $distance-step;
+$padding-iterations: $distance-iterations;
+
+@mixin padding {
+    @for $i from 1 through $padding-iterations {
+
+        .pt-#{$i * $padding-step} {
+            padding-top: $i * $padding-step * 1px;
+        }
+
+        .pb-#{$i * $padding-step} {
+            padding-bottom: $i * $padding-step * 1px;
+        }
+
+        .pr-#{$i * $padding-step} {
+            padding-right: $i * $padding-step * 1px;
+        }
+
+        .pl-#{$i * $padding-step} {
+            padding-left: $i * $padding-step * 1px;
+        }
+
+        .p-#{$i * $padding-step} {
+            padding: $i * $padding-step * 1px;
+        }
+    }
+}
+
+@include padding();

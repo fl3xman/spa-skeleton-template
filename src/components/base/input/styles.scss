@@ -1,0 +1,29 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/paddings";
+@import "../../../../assets/styles/typography";
+@import "../../../../assets/styles/extensions";
+
+
+.input {
+    width: 100%;
+
+    &__input-element {
+        @extend %base-input;
+
+        &::placeholder {
+            opacity: .7;
+            color: $grey;
+        }
+
+        &:focus {
+            border: 1px solid lighten($green, 5%);
+            outline: 1px solid $green;
+        }
+    }
+    
+    &__wrapper {
+        position: relative;
+        margin-top: 6px;
+    }
+
+}

@@ -1,0 +1,31 @@
+@import "variables";
+
+$margin-step: $distance-step;
+$margin-iterations: $distance-iterations;
+
+@mixin margin {
+    @for $i from 1 through $margin-iterations {
+
+        .mt-#{$i * $margin-step} {
+            margin-top: $i * $margin-step * 1px;
+        }
+
+        .mb-#{$i * $margin-step} {
+            margin-bottom: $i * $margin-step * 1px;
+        }
+
+        .mr-#{$i * $margin-step} {
+            margin-right: $i * $margin-step * 1px;
+        }
+
+        .ml-#{$i * $margin-step} {
+            margin-left: $i * $margin-step * 1px;
+        }
+
+        .m-#{$i * $margin-step} {
+            margin: $i * $margin-step * 1px;
+        }
+    }
+}
+
+@include margin();

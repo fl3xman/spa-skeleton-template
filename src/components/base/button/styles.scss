@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/typography";
+@import "../../../../assets/styles/mixins";
+
+.button {
+    @include buttonType($button-type-map);
+    display: inline-flex;
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: none;
+    min-width: 100px;
+    cursor: pointer;
+    outline: none;
+    justify-content: center;
+    transition: background-color 300ms ease-in-out;
+    white-space: nowrap;
+
+    &__text {
+        @extend .body--bold;
+        color: $white;
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+    }
+
+    &:disabled {
+        background-color: $grey;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: darken($grey, 5%);
+        }
+    }
+}

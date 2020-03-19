@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/variables";
+
+.date {
+
+    &__day {
+        color: $red;
+        margin-bottom: 2px;
+    }
+}

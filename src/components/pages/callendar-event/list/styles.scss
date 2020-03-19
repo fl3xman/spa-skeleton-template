@@ -1,0 +1,12 @@
+@import "../../../../../assets/styles/extensions";
+
+.event-list {
+
+    &__header {
+        padding: 24px 0;
+    }
+
+    &__content {
+        @extend %content;
+    }
+}
